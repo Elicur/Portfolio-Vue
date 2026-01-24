@@ -1,0 +1,21 @@
+<template>
+	<div class="relative min-h-screen text-text bg-bg dark:bg-slate-950 overflow-hidden">
+
+    <!-- Glow (light: casi invisible | dark: sutil) -->
+    <div
+      class="pointer-events-none absolute -top-48 left-1/2 -translate-x-1/2
+             h-[520px] w-[520px] rounded-full
+             bg-slate-900/5 dark:bg-primary/10
+             blur-[140px]"
+    ></div>
+
+		<Navbar />
+		<HeroSection />
+	</div>
+</template>
+
+<script setup>
+	import { defineAsyncComponent } from 'vue';
+	const Navbar = defineAsyncComponent(() => import('./components/layout/Navbar.vue'));
+	const HeroSection = defineAsyncComponent(() => import('./components/layout/HeroSection.vue'));
+</script>

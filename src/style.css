@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Base */
+  --color-bg: #F1F5F9;          /* slate-100 */
+  --color-surface: #FFFFFF;     /* white */
+  --color-text: #0F172A;        /* slate-900 */
+  --color-muted: #475569;       /* slate-600 */
+  --color-border: #E2E8F0;      /* slate-200 */
+
+  /* Brand */
+  --color-primary: #4F46E5;     /* indigo-600 */
+  --color-primary-700: #4338CA; /* indigo-700 */
+  --color-secondary: #0EA5E9;   /* sky-500 */
+  --color-accent: #22C55E;      /* green-500 (opcional) */
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
