@@ -28,6 +28,14 @@
 
                 <!-- Actions -->
                 <div class="flex items-center gap-2">
+
+                    <button
+                        @click="toggleLang"
+                        class="text-sm font-medium text-muted hover:text-text"
+                        >
+                        {{ locale === 'es' ? 'EN' : 'ES' }}
+                    </button>
+
                 <!-- Dark toggle -->
                 <button
                     type="button"
@@ -81,8 +89,14 @@
 <script setup>
     import { ref } from 'vue'
     import { Icon } from '@iconify/vue'
+    import { useI18n } from 'vue-i18n'
 
+    const { locale } = useI18n()
     const isMenuOpen = ref(false)
+
+    const toggleLang = () => {
+        locale.value = locale.value === 'es' ? 'en' : 'es'
+    }
 
     const Menu = ref([
         { name: 'Services', href: '#services' },

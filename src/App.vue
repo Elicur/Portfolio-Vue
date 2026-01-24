@@ -11,6 +11,7 @@
 
 		<Navbar />
 		<HeroSection />
+		<ExperienceSection />
 	</div>
 </template>
 
@@ -18,4 +19,5 @@
 	import { defineAsyncComponent } from 'vue';
 	const Navbar = defineAsyncComponent(() => import('./components/layout/Navbar.vue'));
 	const HeroSection = defineAsyncComponent(() => import('./components/layout/HeroSection.vue'));
+	const ExperienceSection = defineAsyncComponent(() => import('./components/layout/ExperienceSection.vue'));
 </script>

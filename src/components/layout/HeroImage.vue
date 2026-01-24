@@ -22,7 +22,7 @@
                     ring-1 ring-primary/20 dark:ring-secondary/20">
             
             <img
-                src="@/assets/images/eliasProfile1.jpg"
+                src="@/assets/images/eliasProfile2.jpg"
                 alt="Elías"
                 class="h-full w-full object-cover"
                 loading="lazy" />

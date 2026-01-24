@@ -9,8 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@motionone/vue": "^10.16.4",
     "aos": "^2.3.4",
-    "vue": "^3.5.24"
+    "vue": "^3.5.24",
+    "vue-i18n": "^11.2.8"
   },
   "devDependencies": {
     "@iconify/vue": "^5.0.0",
