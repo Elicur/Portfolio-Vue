@@ -12,9 +12,9 @@
 		<Navbar />
 		<HeroSection />
 		<ExperienceSection />
-		<SkillsSection />
 		<EducationSection />
 		<ProjectsSection />
+		<SkillsSection />
 	</div>
 </template>
 

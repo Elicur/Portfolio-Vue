@@ -3,12 +3,22 @@ import { createI18n } from 'vue-i18n'
 
 export const messages = {
     es: {
+        navbar: {
+            home: 'Inicio',
+            experience: 'Experiencia',
+            education: 'Formación',
+            projects: 'Proyectos',
+            skills: 'Tecnologías',
+            langLabel: 'Español',
+        },
+
         hero: {
-        title: 'Hola,',
+        title: 'Hola!',
         name: 'Soy Elías Bentancur',
         role: 'Tecnólogo en Informática',
-        description: ', desarrollador Full Stack con conocimientos en Testing / QA e Infraestructura, enfocado en construir soluciones sólidas y mantenibles.',
-        contact: 'Contactarme',
+        description: ', desarrollador {fullstack} con conocimientos en {testing}, {infra} y {os}, orientado al desarrollo de aplicaciones confiables y escalables.',
+        linkedin: 'LinkedIn',
+        mail: 'Email', 
         download: 'Descargar CV',
         },
 
@@ -98,12 +108,22 @@ export const messages = {
         },
     },
     en: {
+        navbar: {
+            home: 'Home',
+            experience: 'Experience',
+            education: 'Education',
+            projects: 'Projects',
+            skills: 'Skills',
+            langLabel: 'English',
+        },
+
         hero: {
-        title: 'Hi,',
+        title: 'Hi!',
         name: 'I’m Elías Bentancur',
         role: 'IT Technologist',
-        description: ', Full Stack Developer with knowledge of Testing / QA and Infrastructure, focused on building reliable and maintainable solutions.',
-        contact: 'Contact Me',
+        description: ', {fullstack} Developer with knowledge of {testing}, {infra} and {os}, focused on building reliable and scalable applications.',
+        linkedin: 'LinkedIn',
+        mail: 'Email', 
         download: 'Download CV',
         },
 

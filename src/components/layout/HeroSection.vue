@@ -1,5 +1,5 @@
 <template>
-	<section class="min-h-screen flex items-center pt-14 md:pt-18">
+	<section id="home" class="min-h-screen flex items-center pt-14 md:pt-18">
 		<div class="mx-auto max-w-5xl px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center">
 
 			<!-- Texto -->
@@ -21,37 +21,81 @@
 				</h1>
 
 
-				<p class="text-lg text-muted max-w-xl mx-auto lg:mx-0 mb-8">
+				<p class="text-lg text-muted max-w-xl mx-auto lg:mx-0">
 					<span class="font-semibold text-slate-700 dark:text-slate-200">
 						{{ t('hero.role') }}
 					</span>
-					<span class="text-slate-700 dark:text-slate-300">
-						{{ t('hero.description') }}
-					</span>
+				
+					<i18n-t
+						keypath="hero.description"
+						tag="span"
+						class="text-slate-700 dark:text-slate-300">
+						<template #fullstack>
+							<span class="font-semibold text-secondary/90">Full Stack</span>
+						</template>
+
+						<template #testing>
+							<span class="font-semibold text-secondary/90">Testing / QA</span>
+						</template>
+
+						<template #infra>
+							<span class="font-semibold text-secondary/90">
+								{{ locale === 'es' ? 'Infraestructura' : 'Infrastructure' }}
+							</span>
+						</template>
+
+						<template #os>
+							<span class="font-semibold text-secondary/90">
+								{{ locale === 'es' ? 'Sistemas Operativos' : 'Operating Systems' }}
+							</span>
+						</template>
+					</i18n-t>
 				</p>
 
-				<!-- Buttons -->
-				<div class="flex justify-center lg:justify-start gap-4">
-				<!-- Primary -->
-				<a
-					href="#contact"
-					class="inline-flex items-center justify-center rounded-xl
-						bg-primary px-6 py-3 text-sm font-medium text-white
-						hover:bg-primary-700 transition"
-				>
-					{{ t('hero.contact') }}
-				</a>
 
-				<!-- Secondary / Outline -->
-				<a
-					href="/cv.pdf"
-					class="inline-flex items-center justify-center rounded-xl
-						border border-border px-6 py-3 text-sm font-medium
-						text-text hover:bg-slate-100 transition
-						dark:border-slate-800 dark:hover:bg-slate-900"
-				>
-					{{ t('hero.download') }}
-				</a>
+				<!-- Actions -->
+				<div class="mt-8 flex flex-wrap items-center justify-center gap-3 lg:justify-start">
+				
+					<!-- LinkedIn -->
+					<a
+						href="https://www.linkedin.com/in/el%C3%ADas-bentancur-silvera-7b8937222/"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="group inline-flex h-11 items-center gap-2 rounded-xl
+							bg-primary px-5 text-sm font-semibold text-white
+							shadow-sm transition
+							hover:bg-primary/90 hover:shadow-md">
+						<Icon icon="mdi:linkedin" class="text-xl transition-transform group-hover:scale-110" />
+						{{ t('hero.linkedin') }}
+					</a>
+
+					<!-- Email -->
+					<a
+						href="mailto:ebentancur19@gmail.com"
+						class="group inline-flex h-11 items-center gap-2 rounded-xl
+							border border-border/70 bg-surface px-5
+							text-sm font-semibold text-text
+							transition
+							hover:bg-slate-100 hover:shadow-sm
+							dark:border-slate-800 dark:bg-slate-950
+							dark:text-slate-100 dark:hover:bg-slate-900/60">
+						<Icon icon="mdi:email-outline" class="text-xl transition-transform group-hover:scale-110" />
+						{{ t('hero.mail') }}
+					</a>
+
+					<!-- Download CV -->
+					<a
+						href="/cv/Elias_Bentancur_CV.pdf"
+						download
+						class="group inline-flex h-11 items-center gap-2 rounded-xl
+							px-5 text-sm font-semibold text-muted
+							transition
+							hover:bg-slate-100 hover:text-text
+							dark:text-slate-300 dark:hover:bg-slate-900/60 dark:hover:text-white">
+						<Icon icon="mdi:download" class="text-xl transition-transform group-hover:translate-y-0.5" />
+						{{ t('hero.download') }}
+					</a>
+
 				</div>
 			</Motion>
 
@@ -62,8 +106,7 @@
 			:initial="{ opacity: 0, scale: 0.96 }"
 			:animate="{ opacity: 1, scale: 1 }"
 			:transition="{ duration: 0.45, delay: 0.1, easing: 'ease-out' }"
-			class="flex justify-center lg:justify-end"
-			>
+			class="flex justify-center lg:justify-end">
 				<HeroImage />
 			</Motion>
 
@@ -72,9 +115,10 @@
 </template>
 
 <script setup>
-import HeroImage from './HeroImage.vue'
-import { Motion } from '@motionone/vue'
-import { useI18n } from 'vue-i18n'
+	import HeroImage from './HeroImage.vue'
+	import { Motion } from '@motionone/vue'
+	import { useI18n } from 'vue-i18n'
 
-const { t } = useI18n()
+	const { t } = useI18n()
+	const {	locale } = useI18n()
 </script>

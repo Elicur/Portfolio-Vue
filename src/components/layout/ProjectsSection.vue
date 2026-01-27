@@ -1,5 +1,5 @@
 <template>
-    <section class="py-20">
+    <section id="projects" class="py-20">
         <div class="mx-auto max-w-5xl px-8 md:px-10">
 
             <div class="flex items-end justify-between mb-10">
