@@ -52,7 +52,7 @@
                     @keydown.left.prevent="prev"
                     @keydown.right.prevent="next">
                     
-                    <div class="grid grid-cols-1 md:grid-cols-2 items-stretch">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_3fr] items-stretch">
 
                         <!-- Image -->
                         <div class="relative aspect-[16/10] overflow-hidden bg-slate-200/40 dark:bg-white/5 group">
