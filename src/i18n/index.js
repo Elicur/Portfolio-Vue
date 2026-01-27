@@ -35,7 +35,7 @@ export const messages = {
             },
             items: {
             languages: ['Java', 'C++', 'C#', 'JavaScript', 'Python', 'PHP', 'Kotlin'],
-            frameworks: ['Angular', 'React', 'Django', 'CodeIgniter 4'],
+            frameworks: ['Angular', 'React', 'Vue', 'Django', 'CodeIgniter 4'],
             databases: ['PostgreSQL', 'MySQL'],
             frontend: ['HTML', 'CSS', 'Bootstrap', 'Tailwind CSS'],
             platforms: ['.NET'],
@@ -81,7 +81,7 @@ export const messages = {
                 {
                 title: 'SPI – Sistema de Prevención de Incendios',
                 description:
-                    'Sistema integral para la detección temprana de incendios forestales en Uruguay, desarrollado en colaboración con la Dirección Nacional de Bomberos. Integra sensores terrestres y datos meteorológicos de INUMET, permitiendo el monitoreo en tiempo real mediante alertas, ubicaciones y gráficas dinámicas, además de la notificación automática por correo electrónico y Telegram.',
+                    'Sistema integral para la detección temprana de incendios forestales en Uruguay, desarrollado en colaboración con la Dirección Nacional de Bomberos. Integra sensores terrestres y datos meteorológicos de INUMET, permitiendo el monitoreo en tiempo real mediante alertas, ubicaciones y gráficas dinámicas.',
                 tech: ['React', 'Python', 'Django', 'PostgreSQL', 'Docker', 'Tailwind CSS'],
                 image: 'SPI', // key, no ruta
                 githubUrl: 'https://github.com/FedericoGardella/SPI_App',
@@ -130,7 +130,7 @@ export const messages = {
             },
             items: {
             languages: ['Java', 'C++', 'C#', 'JavaScript', 'Python', 'PHP', 'Kotlin'],
-            frameworks: ['Angular', 'React', 'Django', 'CodeIgniter 4'],
+            frameworks: ['Angular', 'React', 'Vue', 'Django', 'CodeIgniter 4'],
             databases: ['PostgreSQL', 'MySQL'],
             frontend: ['HTML', 'CSS', 'Bootstrap', 'Tailwind CSS'],
             platforms: ['.NET'],
@@ -176,7 +176,7 @@ export const messages = {
                 {
                 title: 'SPI – Fire Prevention System',
                 description:
-                    'Integrated system for early detection of forest fires in Uruguay, developed in collaboration with the National Fire Department. It combines ground sensors and meteorological data from INUMET, enabling real-time monitoring through alerts, geolocated devices, and dynamic real-time charts, as well as automatic notifications via email and Telegram.',
+                    'Integrated system for early detection of forest fires in Uruguay, developed in collaboration with the National Fire Department. It combines ground sensors and meteorological data from INUMET, enabling real-time monitoring through alerts, geolocated devices, and dynamic real-time charts.',
                 tech: ['React', 'Python', 'Django', 'PostgreSQL', 'Docker', 'Tailwind CSS'],
                 image: 'SPI', // key, no ruta
                 githubUrl: 'https://github.com/FedericoGardella/SPI_App',
@@ -184,7 +184,7 @@ export const messages = {
                 {
                 title: 'Truco Masters',
                 description:
-                    'Mobile application designed to keep score during Truco card game matches, allowing users to easily and intuitively track each team’s points throughout game. Built as a practical tool for casual matches, with a strong focus onusability and fast interaction.',
+                    'Mobile application designed to keep score during Truco card game matches, allowing users to easily and intuitively track each team’s points throughout game. Built as a practical tool for casual matches, with a strong focus on usability and fast interaction.',
                 tech: ['Kotlin', 'Android Studio'],
                 image: 'truco-masters', // key, no ruta
                 githubUrl: 'https://github.com/Elicur/Truco-Masters',

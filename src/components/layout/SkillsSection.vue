@@ -1,7 +1,7 @@
 <template>
     <section class="py-20">
         <div class="mx-auto max-w-5xl px-8 md:px-10">
-        <h2 class="mb-10 text-3xl md:text-4xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
+        <h2 class="mb-10 text-3xl md:text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100">
             {{ t('skills.title') }}
         </h2>
 

@@ -14,6 +14,7 @@
 		<ExperienceSection />
 		<SkillsSection />
 		<EducationSection />
+		<ProjectsSection />
 	</div>
 </template>
 
@@ -24,4 +25,5 @@
 	const ExperienceSection = defineAsyncComponent(() => import('./components/layout/ExperienceSection.vue'));
 	const SkillsSection = defineAsyncComponent(() => import('./components/layout/SkillsSection.vue'));
 	const EducationSection = defineAsyncComponent(() => import('./components/layout/EducationSection.vue'));
+	const ProjectsSection = defineAsyncComponent(() => import('./components/layout/ProjectsSection.vue'));
 </script>

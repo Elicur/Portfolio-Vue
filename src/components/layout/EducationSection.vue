@@ -1,25 +1,24 @@
 <template>
 	<section class="py-20">
 		<div class="mx-auto max-w-5xl px-8 md:px-10">
-			<h2 class="mb-10 text-3xl md:text-4xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
+			<h2 class="mb-10 text-3xl md:text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100">
 				{{ t('education.title') }}
 			</h2>
 
 			<div class="space-y-5">
 				<article
-				v-for="(item, idx) in educationItems"
-				:key="idx"
-				class="rounded-2xl border border-border/60
-						bg-slate-50/80 dark:bg-slate-900/60
-						dark:border-slate-800
-						p-6 md:p-7 hover:bg-slate-50/90 dark:hover:bg-slate-900/70 transition-colors
-">
-				<!-- Period -->
-				<div class="mb-4">
-					<span class="text-sm md:text-base font-bold text-secondary/90">
-					{{ item.period }}
-					</span>
-				</div>
+					v-for="(item, idx) in educationItems"
+					:key="idx"
+					class="rounded-2xl border border-border/60
+							bg-slate-50/80 dark:bg-slate-900/60
+							dark:border-slate-800
+							p-6 md:p-7 transition hover:bg-slate-100 dark:hover:bg-slate-900/80">
+					<!-- Period -->
+					<div class="mb-4">
+						<span class="text-sm md:text-base font-bold text-secondary/90">
+						{{ item.period }}
+						</span>
+					</div>
 
 					<div class="flex items-center gap-4">
 						<!-- Logo bubble -->
