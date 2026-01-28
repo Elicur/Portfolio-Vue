@@ -54,29 +54,39 @@
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_3fr] items-stretch">
 
-                        <!-- Image -->
-                        <div class="relative aspect-[16/10] overflow-hidden bg-slate-200/40 dark:bg-white/5 group">
-                            <!-- Fondo blur -->
-                            <img
-                                :src="currentImage"
-                                :alt="current.title"
-                                class="absolute inset-0 h-full w-full object-cover blur-2xl scale-110 opacity-30"
-                                aria-hidden="true"
-                            />
+                        <!-- Image - Columna izquierda -->
+                        <div class="relative min-w-0 overflow-hidden bg-slate-200/40 dark:bg-white/5 isolate h-full group 
+                                flex items-center justify-center">
 
-                            <!-- Imagen principal -->
-                            <img
-                                :src="currentImage"
-                                :alt="current.title"
-                                class="relative z-10 h-full w-full object-contain p-6 
-                                    transition-transform duration-300 ease-out group-hover:scale-105"
-                                loading="lazy"
-                            />
+                            <!-- BLUR -->
+                            <div
+                                class="absolute inset-0 scale-110 opacity-30 blur-2xl pointer-events-none"
+                                :style="{
+                                backgroundImage: `url(${currentImage})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center'
+                                }"
+                                aria-hidden="true"
+                            ></div>
+
+                            <!-- IMAGEN -->
+                            <div
+                                class="relative z-10 mx-auto
+                                    aspect-[16/10] md:aspect-auto
+                                    md:h-[320px] lg:h-[360px] xl:h-[420px]
+                                    p-6 flex items-center justify-center">
+                                <img
+                                    :src="currentImage"
+                                    :alt="current.title"
+                                    class="h-full w-full object-contain transition-transform duration-300 ease-out group-hover:scale-105"
+                                    loading="lazy"/>
+                            </div>
                         </div>
 
 
+
                         <!-- Content -->
-                        <div class="p-6 md:p-8 flex flex-col h-full">
+                        <div class="relative z-10 min-w-0 p-6 md:p-8 flex flex-col h-full">
                             <!-- Mobile arrows -->
                             <div class="md:hidden flex justify-between mb-4">
                                 <button
